@@ -12,7 +12,7 @@ namespace CourseSelection.Models
         public string? SurName { get; set; }
         public string? FullName => $"{Name} {SurName?.ToUpper()}";
         public int? Age { get; set; }
-        [Required(ErrorMessage = "Please chose a course")]
+        [Required(ErrorMessage = "Please choose a course")]
         public string? SelectedCourse { get; set; }=String.Empty; 
         public DateTime ApplyAt { get; set; }
 
